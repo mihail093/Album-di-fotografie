@@ -1,0 +1,49 @@
+.overlay-style{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+.img-style{
+    max-width: 90%;
+    max-height: 90%;
+}
+.img-box{
+    width: 240px;
+    height: 240px;
+    background-image: url(assets/imageCamera.jpeg);
+    background-size: cover;
+}
+.flash-box{
+    width: 34px;
+    height: 24px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 28%;
+    position: relative;
+    left: 47.5%;
+    top: 9.5%;
+}
+
+@keyframes changeBgColor {
+    0% {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    25%{
+        background-color: rgba(122, 122, 122, 0.8);
+    }
+    50% {
+        background-color: rgb(245, 245, 245);
+    }
+    75% {
+        background-color: rgba(122, 122, 122, 0.8);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}

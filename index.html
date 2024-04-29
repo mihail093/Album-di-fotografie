@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapSeeker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header-->
+    <header data-bs-theme="dark">
+        <div class="text-bg-dark collapse" id="navbarHeader">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-md-7 py-4">
+                <h4>About</h4>
+                <p class="text-body-secondary">
+                  Explore the world through imagery with SnapSeeker, the ultimate destination for discovering and appreciating high-quality
+                  photographs from around the globe. SnapSeeker revolutionizes the way you search for images, offering a user-friendly interface
+                  where every search result is more than just a picture. Each photo is showcased alongside a concise description, illuminating
+                  the context or the story behind the image, and crediting the talented photographer responsible for capturing that moment.
+                </p>
+              </div>
+              <div class="col-sm-4 offset-md-1 py-4">
+                <h4>Contact</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                  <li><a href="#" class="text-white">Like on Facebook</a></li>
+                  <li><a href="#" class="text-white">Email me</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar fixed-top navbar-dark bg-dark shadow-sm">
+          <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+              <strong>SnapSeeker</strong>
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!--Main-->
+    <main>
+
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">SnapSeeker</h1>
+                    <p class="lead text-body-secondary">
+                      Whether you're a professional looking for inspiration, a student researching for projects, or simply a curious soul
+                      enchanted by the beauty of the visual world, SnapSeeker makes it easy and enjoyable to find exactly what you're
+                      looking for. Dive into a seamless exploration of creativity, history, and nature with SnapSeeker -
+                      where every picture tells a story.
+                    </p>
+                    <div>
+                        <p class="font-monospace fw-bold">Chose the orientation</p>
+                        <div class="mb-4 ms-2">
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                              <label class="form-check-label fst-italic d-flex justify-content-start" for="flexRadioDefault1">
+                                PORTRAIT
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                              <label class="form-check-label fst-italic d-flex justify-content-start" for="flexRadioDefault2">
+                                  LANDSCAPE
+                              </label>
+                          </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon1">Search</button>
+                            <input id="photoInput" type="text" class="form-control" placeholder="Search Your Photos" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <div class="album pt-5 bg-body-tertiary">
+            <div class="container">
+                <div id="album" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                  <div class="d-flex justify-content-center w-100">
+                    <div id="targetElement" class="img-box">
+                      <div class="flash-box"></div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="text-body-secondary">
+        <div class="container">
+            <p class="d-flex justify-content-end my-2">
+                <a href="#" class="nav-link text-body-secondary">
+                  <i class="bi bi-arrow-up-square"></i>
+                  (back to top)
+                </a>
+            </p>
+            <div class="py-3">
+              <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Connect with Us</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Facebook</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Instagram</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Twitter</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">LinkedIn</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Helpful Links</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Help Center</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms of Service</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Mailing Address</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">SnapSeeker Inc.</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">123 Photo Blvd,</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Capture City, CA 90001,</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">United States</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Contact Information</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">support@snapseeker.com</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Phone: +1 800 555 1234</a></li>
+                  </ul>
+                </div>
+              </div>
+              <p class="mt-5">© 2024 SnapSeeker. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
